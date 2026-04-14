@@ -1,0 +1,19 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "manifest.json"
+      ],
+      "url": "https://www.schemastore.org/webextension.json"
+    },
+    {
+      "fileMatch": [
+        "_locales/*/messages.json"
+      ],
+      "url": "https://www.schemastore.org/chrome-extension-locales-messages.json"
+    }
+  ],
+  "cSpell.words": [
+    "Manaba"
+  ]
+}

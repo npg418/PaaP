@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        {
+          "header": "Content-Disposition",
+          "operation": "remove"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "*://manaba.tsukuba.ac.jp/*.pdf",
+      "resourceTypes": [
+        "main_frame"
+      ]
+    }
+  }
+]
