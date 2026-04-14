@@ -2,5 +2,6 @@
 
 English | [日本語](./README.ja.md)
 
-This extension allows you to view PDF files as a page within Manaba. It is useful for students who want to view PDF files without leaving the Manaba interface.
-_Stay clean your Downloads folder!_
+Tired of PDFs being downloaded when you try to view them on Manaba?  
+_Let's keep your Downloads folder clean!_  
+This extension allows you to view PDF files as a page within Manaba. It's perfect for those who want to keep everything within the browser.
