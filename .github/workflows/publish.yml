@@ -1,7 +1,8 @@
 name: Publish Extension
 on:
-  release:
-    types: [published]
+  push:
+    tags:
+      - "v*.*.*"
   workflow_dispatch:
 jobs:
   build-and-publish:
@@ -12,6 +13,13 @@ jobs:
 
       - name: Zip extension
         run: zip -r PaaP.zip _locales icons manifest.json rules.json -x icons/icon.svg
+
+      - name: Release to GitHub
+        uses: softprops/action-gh-release@v3
+        with:
+          files: PaaP.zip
+          generate-release-notes: true
+          overwrite: true
 
       - name: Publish to Firefox Add-ons
         uses: wdzeng/firefox-addon@v1
