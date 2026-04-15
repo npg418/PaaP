@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "PDF as a Page for Manaba",
   "short_name": "PaaP for Manaba",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "__MSG_extensionDescription__",
   "default_locale": "ja",
   "declarative_net_request": {
