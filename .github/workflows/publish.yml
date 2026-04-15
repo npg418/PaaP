@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Zip extension
-        run: zip _locales icons manifest.json rules.json -r PaaP.zip -x icons/icon.svg
+        run: zip -r PaaP.zip _locales icons manifest.json rules.json -x icons/icon.svg
 
       - name: Publish to Firefox Add-ons
         uses: wdzeng/firefox-addon@v1
