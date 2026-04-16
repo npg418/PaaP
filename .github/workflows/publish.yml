@@ -4,6 +4,11 @@ on:
     tags:
       - "v*.*.*"
   workflow_dispatch:
+    inputs:
+      upload_to_firefox:
+        description: 'Upload to Firefox Add-ons'
+        required: false
+        default: 'true'
 
 permissions:
   contents: write
@@ -34,6 +39,7 @@ jobs:
 
       - name: Publish to Firefox Add-ons
         uses: wdzeng/firefox-addon@v1
+        if: github.event_name == 'push' && github.ref_name == 'v*.*.*' || github.event_name == 'workflow_dispatch' && github.event.inputs.upload_to_firefox == 'true'
         with:
           addon-guid: paap.itf@npg418.com
           xpi-path: PaaP.zip
